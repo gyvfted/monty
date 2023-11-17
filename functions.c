@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * mult - Multiplies the second top element of the stack by the top element
- * @stack: Double pointer to the stack
- * @line_number: Line number in the Monty script
+ * mult - Multiplies the second element from
+ * the top with the top element of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The line number of the operation in the Monty file.
  */
-
 void mult(stack_t **stack, unsigned int line_number)
 {
 	if (*stack == NULL || (*stack)->next == NULL)
@@ -18,12 +18,11 @@ void mult(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * modu - Computes the rest of the division of the second top element
- * of the stack by the top element
- * @stack: Double pointer to the stack
- * @line_number: Line number in the Monty script
+ * modu - Computes the modulo of the second element
+ *  from the top with the top element of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The line number of the operation in the Monty file.
  */
-
 void modu(stack_t **stack, unsigned int line_number)
 {
 	if (*stack == NULL || (*stack)->next == NULL)
@@ -41,11 +40,10 @@ void modu(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pchar - Print the character at the top of the stack.
- * @stack: Double pointer to the top of the stack.
- * @line_number: Line number in the Monty script.
+ * pchar - Prints the ASCII character of the top element of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The line number of the operation in the Monty file.
  */
-
 void pchar(stack_t **stack, unsigned int line_number)
 {
 	int char_value;
@@ -65,11 +63,10 @@ void pchar(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pstr - Prints the string starting at the top of the stack
- * @stack: Double pointer to the stack
- * @line_number: Line number in the Monty script
+ * pstr - Prints the string starting from the top of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The line number of the operation in the Monty file.
  */
-
 void pstr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = *stack;

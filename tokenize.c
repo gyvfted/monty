@@ -1,11 +1,17 @@
 #include "monty.h"
-
 /**
- * tokenize - tokenizes the lines of a monty script
- * @lineptr: a string full of arguments
- * Return: tokens of lineptr(array)
+ * tokenize - Tokenize a string into an array of strings
+ * @lineptr: The string to be tokenized
+ *
+ * This function takes a string and tokenizes
+ *  it based on specified delimiters.
+ * It returns an array of strings (tokens)
+ *  representing the individual elements
+ * of the original string.
+ *
+ * Return: An array of strings representing
+ *  the tokens, or NULL on failure.
  */
-
 char **tokenize(char *lineptr)
 {
 	char **argv = NULL, *token;

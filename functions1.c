@@ -2,11 +2,11 @@
 
 
 /**
- * push - Pushes a value onto the stack
- * @stack: Double pointer to the stack
- * @line_number: Line number in the Monty script
+ * push - Pushes an integer onto the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The line number of the operation
+ *  in the Monty file.
  */
-
 void push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new_node;
@@ -37,12 +37,11 @@ void push(stack_t **stack, unsigned int line_number)
 	*stack = new_node;
 }
 /**
- * pall - Prints all the values on the stack.
- * @stack: Double pointer to the stack.
- * @line_number: Line number in the Monty script.
- * Return: nothing
+ * pall - Prints all the elements of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The line number of the
+ * operation in the Monty file.
  */
-
 
 void pall(stack_t **stack, unsigned int line_number)
 {
@@ -58,11 +57,10 @@ void pall(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pint - Prints the value at the top of the stack
- * @stack: Double pointer to the stack
- * @line_number: Line number in the Monty script
+ * pint - Prints the value at the top of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The line number of the operation in the Monty file.
  */
-
 void pint(stack_t **stack, unsigned int line_number)
 {
 	(void)line_number;
@@ -73,11 +71,10 @@ void pint(stack_t **stack, unsigned int line_number)
 	}
 	printf("%d\n", (*stack)->n);
 }
-
 /**
- * pop - Removes the top element of the stack
- * @stack: Double pointer to the stack
- * @line_number: Line number in the Monty script
+ * pop - Removes the top element of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The line number of the operation in the Monty file.
  */
 void pop(stack_t **stack, unsigned int line_number)
 {
@@ -96,11 +93,10 @@ void pop(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * swap - Swaps the top two elements of the stack
- * @stack: Double pointer to the stack
- * @line_number: Line number in the Monty script
+ * swap - Swaps the top two elements of the stack.
+ * @stack: A pointer to the top of the stack.
+ * @line_number: The line number of the operation in the Monty file.
  */
-
 void swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;

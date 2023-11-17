@@ -17,7 +17,7 @@ void add(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * nop - Doesn't do anything
+ * nop - it does not do anything do anything
  * @stack: Double pointer to the stack
  * @line_number: Line number in the Monty script
  */
@@ -27,7 +27,8 @@ void nop(stack_t **stack, unsigned int line_number)
 	(void)line_number;
 }
 /**
- * sub - Subtracts the top element of the stack from the second top element
+ * sub - sub the top element of the stack
+ * from the second top element
  * @stack: Double pointer to the stack
  * @line_number: Line number in the Monty script
  */
@@ -43,7 +44,8 @@ void sub(stack_t **stack, unsigned int line_number)
 	pop(stack, line_number);
 }
 /**
- * divi - Divides the second top element of the stack by the top element
+ * divi - Divides the second top element
+ * of the stack from the top
  * @stack: Double pointer to the stack
  * @line_number: Line number in the Monty script
  */

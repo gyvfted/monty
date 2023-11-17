@@ -1,8 +1,8 @@
 #include "monty.h"
 
 /**
- * free_tokens - Frees an array of tokens
- * @tokens: The array of tokens to be freed
+ * free_tokens - Frees an array of tokens.
+ * @tokens: The array of tokens to free.
  */
 void free_tokens(char **tokens)
 {
@@ -18,10 +18,9 @@ void free_tokens(char **tokens)
 	}
 }
 
-
 /**
- * free_stack - Frees the allocated memory for the stack
- * @stack: Pointer to the top of the stack
+ * free_stack - Frees a stack.
+ * @stack: A pointer to the top of the stack.
  */
 void free_stack(stack_t *stack)
 {

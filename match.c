@@ -1,7 +1,8 @@
 #include "monty.h"
 
 /**
- * match - Matches the opcode and calls the corresponding function
+ * match - this function is responsible for matching the
+ * opcode and the calls the corresponding function
  * @opcode: The opcode to match
  * @stack: Double pointer to the stack
  * @line_number: Line number in the Monty script

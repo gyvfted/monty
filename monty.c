@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
  * main - Entry point for the Monty interpreter.
- * @argc: Number of command-line arguments.
- * @argv: Array of command-line arguments.
+ * @argc: Number of command_line arguments.
+ * @argv: Array of command_line arguments.
  *
  * Return: EXIT_SUCCESS on success, EXIT_FAILURE on failure.
  */

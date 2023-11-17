@@ -1,12 +1,19 @@
 #include "monty.h"
-
 /**
- * process - a function to process a monty script line by line
- * @file: the monty script to be processed
+ * process - Process a file containing
+ *  commands and execute them
+ * @file: Pointer to the FILE structure
+ *  representing the input file
  * @stack: Double pointer to the top of the stack
- * Return: EXIT_SUCCESS on success and EXIT_FAILURE on failure
+ *
+ * This function reads lines from the
+ * specified file, tokenizes each line,
+ * and processes the tokens to execute c
+ * orresponding commands.
+ *
+ * Return: EXIT_SUCCESS on successful
+ * processing, EXIT_FAILURE otherwise.
  */
-
 int process(FILE *file, stack_t **stack)
 {
 	char *lineptr = NULL;
@@ -40,6 +47,6 @@ int process(FILE *file, stack_t **stack)
 	else
 	{
 		return (EXIT_FAILURE);
-	
+
 	}
 }
